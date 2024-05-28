@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "E:/SharedDirectory/datasets/3-phase-3-dockerfile-asts/generate",
+        "baseUrl": "D:/nodejs/node_global/node_modules",
+        "moduleResolution": "node",
+        "typeRoots": [
+            "D:/nodejs/node_global/node_modules/@types"
+        ]
+    },
+    "include": [
+        "app.ts",
+        "ast.ts"
+    ],
+    "exclude": []
+}
