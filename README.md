@@ -4,6 +4,7 @@
 
 ICSE 2020 Artifact for: `Predicting Docker Build Result based on Deep Abstract Syntax Tree and Deep Neural Network`.
 
+`labels.csv`: Duplicated Dockerfiles with labels
 ## Reproducing experimental results
 
 ***
@@ -29,4 +30,4 @@ ICSE 2020 Artifact for: `Predicting Docker Build Result based on Deep Abstract S
 
 #### RQ6.2 Incorrect predictions analysis
 
-For this part of the discussion, we selected 100 Dockerfile prefix names as shown in RQ6.2-IDs.csv.
+For this part of the discussion, we have selected 100 Dockerfiles with their prefix names in `dataset.tar.gz` as shown in `RQ6.2-IDs.csv`.
