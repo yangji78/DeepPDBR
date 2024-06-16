@@ -2,9 +2,10 @@
 
 ***
 
-ICSE 2020 Artifact for: `Predicting Docker Build Result based on Deep Abstract Syntax Tree and Deep Neural Network`.
+Internetware 2024 Artifact for: `Predicting Docker Build Result based on Deep Abstract Syntax Tree and Deep Neural Network`.
 
 `labels.csv`: Duplicated Dockerfiles with labels
+
 ## Reproducing experimental results
 
 ***
