@@ -1,10 +1,10 @@
-# DeepPDBR: Internetware 2024 Artifact
+# DeepPDBR Artifact
 
 `labels.csv`: Duplicated Dockerfiles with labels
 
 ## Reproducing experimental results
 
-### AST parse
+### AST parsing
 
 1. Run `./experiments/I-parse/1-phase-1-dockerfile-asts/generate.sh` for parsing phase I.
 2. Run `./experiments/I-parse/2-phase-2-dockerfile-asts/generate.sh` for parsing phase II.
