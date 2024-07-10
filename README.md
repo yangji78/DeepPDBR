@@ -18,10 +18,7 @@
 
 ### Results prediction
 
-1. Run `./experiments/III-prediction/icpads_predict.py` for prediction prediction.
-2. Run `./experiments/III-prediction/pretrained_predict.py` for BERT models prediction.
-3. Run `./experiments/III-prediction/rnn_predict.py` for GRU/LSTM prediction.
-4. Run `./experiments/III-prediction/transformer_predict.py` for DeepPDBR (**Our Method**) prediction.
+Run `./experiments/III-prediction/transformer_predict.py` for DeepPDBR (**Our Method**) prediction.
 
 #### RQ6.2 Incorrect predictions analysis
 
