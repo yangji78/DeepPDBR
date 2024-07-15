@@ -19,7 +19,7 @@ num_layers = 3
 dim_feedforward = 1024
 dropout = 0.1
 num_classes = 1
-learning_rate = 0.0005
+learning_rate = 0.0003
 epochs = 100
 batch_size = 64
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -100,9 +100,7 @@ for fold, (train_index, test_index) in enumerate(kf.split(dataset)):
     model = TransformerModel(d_model, nhead, num_layers, dim_feedforward, dropout, num_classes)
     model.to(device)
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
-    pos_weight = torch.tensor([0.45]).to(device)
-    criterion = nn.BCEWithLogitsLoss(pos_weight=pos_weight)
-    scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer, gamma=0.8)
+    criterion = nn.BCEWithLogitsLoss()
 
     # 训练和验证
     val_best_loss = float('inf')
@@ -154,8 +152,6 @@ for fold, (train_index, test_index) in enumerate(kf.split(dataset)):
         print(f"Recall: {val_results[2]:.4f}")
         print(f"F1 Score: {val_results[3]:.4f}")
         print(f"AUC: {val_results[4]:.4f}")
-
-        scheduler.step()  # 学习率衰减
 
         if epoch - last_improve > 1:
             # 验证集loss超过1 epoch没下降，结束训练
